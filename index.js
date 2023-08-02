@@ -9,11 +9,11 @@ const sliderBottom = document.querySelectorAll(".slide-bottom");
 
     function showSlide(index) {
       for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
+        slides[i].classList.remove('active');
         sliderBottom[i].classList.remove('active');
       }
       sliderBottom[currentIndex].classList.add('active');
-      slides[index].style.display = 'block';
+      slides[index].classList.add('active');
     }
     
 
